@@ -50,13 +50,13 @@ public class viewController {
 			
 			
 			
-			s=new Saldos();
+		/*	s=new Saldos();
 			s.setDescription("MyBatis en dos jornadas");
 			s.setHours(3);
 			s.setName("MyBatis");
 			s.setPrize(34);
 			
-			mapSaldos.insertSelective(s);
+			mapSaldos.insertSelective(s);*/
 			
 			
 			
