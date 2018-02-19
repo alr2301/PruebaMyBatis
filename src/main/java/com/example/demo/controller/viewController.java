@@ -38,8 +38,8 @@ public class viewController {
 		SqlSession session = getSqlSessionFacto().openSession();
 		try {
 			mapSaldos = session.getMapper(SaldosMapper.class);
-			SaldosKey sk = new SaldosKey();
-			sk.setId(1);
+			SaldosKey sk = new SaldosKey(1);
+			
 			Saldos s = mapSaldos.selectByPrimaryKey(sk);
 			LOG.info("El curso recuperado: " + s.toString());
 			mav.addObject("descripcion", s.getDescription());

@@ -1,7 +1,22 @@
 package com.bankia.NA.modelo;
 
 public class Saldos extends SaldosKey {
-    private String description;
+	
+	
+    public Saldos(Integer id, String description, Integer hours, String name, Integer prize) {
+		super(id);
+		this.description = description;
+		this.hours = hours;
+		this.name = name;
+		this.prize = prize;
+	}
+
+	public Saldos(Integer id) {
+		super(id);
+		// TODO Auto-generated constructor stub
+	}
+
+	private String description;
 
     private Integer hours;
 
